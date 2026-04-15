@@ -1,3 +1,10 @@
+Goal- 
+The "Automator": SnowpipeIf you want data to load automatically as soon as a file lands in S3, use Snowpipe.How it works: It uses S3 Event Notifications (SNS/SQS). When a file is uploaded to S3, AWS "pokes" Snowpipe, which then triggers a serverless load into your table.Best for: Continuous, near real-time ingestion with low latency (usually under 1 minute).Benefit: You don't need to manage a virtual warehouse for the load; Snowflake handles the compute in the background.
+
+
+notes-
+
+
 1. Data Integration & Loading
 	• External Stages: Allows you to link Snowflake directly to external cloud storage like AWS S3, Azure Blob Storage, or Google Cloud Storage 16:53 Opens in a new window .
 	• Snowpipe: A serverless data ingestion service that enables real-time data loading as soon as files appear in a bucket 01:46 Opens in a new window .
